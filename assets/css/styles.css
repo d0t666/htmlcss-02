@@ -2,6 +2,10 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --font-heading: Sen, sans-serif;
+    --primary-color: #ffb900;
+}
 html {
     font-size: 62.5%;
 }
@@ -22,7 +26,7 @@ a {
 .btn {
     min-width: 118px;
     height: 50px;
-    border-radius: 24.5px;
+    border-radius: 999px;
     background: #171100;
     color: #fff;
     text-align: center;
@@ -32,6 +36,9 @@ a {
     line-height: 3;
     display: inline-block;
 }
+.btn:hover {
+    opacity: 0.9;
+}
 /* header */
 .header {
     background: #fffcf4;
@@ -39,6 +46,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 .header .body {
     display: flex;
@@ -85,4 +93,155 @@ a {
 }
 .header .action .signup-btn {
     min-width: 144px;
+}
+/* Hero */
+.hero {
+    padding-top: 56px;
+    background: #fffcf4;
+}
+.hero .body {
+    display: flex;
+}
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+.hero .media-block .img {
+    object-fit: cover;
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+}
+
+.hero-summary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    width: 270px;
+    padding: 28px 24px;
+}
+.hero-summary .item {
+    display: flex;
+}
+/* chọn 1 thẻ class item đầu tiên đứng ngay sau class item- không phải con */
+/* .hero-summary .item + .item {
+    margin-top: 22px;
+} */
+.hero-summary .item:not(.item:first-of-type) {
+    margin-top: 22px;
+}
+.hero-summary .item:nth-child(2) .icon {
+    background: #fcefff;
+}
+.hero-summary .item:nth-child(3) .icon {
+    background: #ebeaff;
+}
+.hero-summary .item .icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #fff9e8;
+}
+
+.hero .info {
+    margin-left: 16px;
+}
+.hero .info .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8; /* 185.714% */
+}
+.hero .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6; /* 166.667% */
+}
+/* Hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .content-block .heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.16px;
+}
+.hero .content-block .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7; /* 166.667% */
+    margin: 22px 0 0;
+}
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    /* gap: 28px; */
+}
+.hero .cta-group .hero-cta {
+    margin: 38px 0 48px;
+    min-width: 180px;
+    min-height: 64px;
+    /* border-radius: 32px; */
+    background: var(--primary-color);
+    line-height: 4.4;
+}
+.hero .watch-video {
+    display: flex;
+    border: none;
+    background: transparent;
+    margin-left: 28px;
+    align-items: center;
+    cursor: pointer;
+}
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    /* background: var(--primary-color); */
+}
+.hero .watch-video span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6; /* 166.667% */
+    margin-left: 14px;
+}
+
+.hero .content-block .desc-stats-strong strong {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3; /* 122.727% */
+    padding-right: 8px;
+}
+.hero .content-block .desc-stats-strong strong:nth-child(2) {
+    padding-left: 28px;
+}
+.hero .content-block .short-desc {
+    margin: 0 0 8px;
 }
