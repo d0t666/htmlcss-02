@@ -39,6 +39,22 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1.16px;
+}
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.2;
+}
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.3; /* 126.316% */
+    letter-spacing: -0.76px;
+}
 /* header */
 .header {
     background: #fffcf4;
@@ -96,7 +112,7 @@ a {
 }
 /* Hero */
 .hero {
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background: #fffcf4;
 }
 .hero .body {
@@ -111,6 +127,7 @@ a {
     width: 470px;
     height: 685px;
     border-radius: 20px;
+    display: block;
 }
 
 .hero-summary {
@@ -121,10 +138,11 @@ a {
     background: #fff;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
 }
 .hero-summary .item {
     display: flex;
+    align-items: center;
 }
 /* chọn 1 thẻ class item đầu tiên đứng ngay sau class item- không phải con */
 /* .hero-summary .item + .item {
@@ -172,15 +190,6 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.hero .content-block .heading {
-    color: #171100;
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -1.16px;
-}
 .hero .content-block .desc {
     color: #5f5b53;
     font-size: 1.8rem;
@@ -244,4 +253,43 @@ a {
 }
 .hero .content-block .short-desc {
     margin: 0 0 8px;
+}
+/* Popular */
+.popular {
+    padding-top: 65px 0;
+    margin-top: 135px;
+}
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-top .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6; /* 166.667% */
+    width: 458px;
+    margin-top: 16px;
+}
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+.popular-top .control-btn {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.popular-top .control-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
 }
