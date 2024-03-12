@@ -14,6 +14,15 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* Commont */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
 .main-content {
     width: 1170px;
     margin-left: auto;
@@ -55,6 +64,9 @@ a {
     font-size: 3.8rem;
     line-height: 1.3; /* 126.316% */
     letter-spacing: -0.76px;
+}
+.break-all {
+    word-break: break-all;
 }
 /* header */
 .header {
@@ -328,6 +340,7 @@ a {
     align-items: center;
 }
 .popular .course-item .title a {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-style: normal;
@@ -365,4 +378,66 @@ a {
 .course-list .course-item .book-btn:hover {
     background: var(--primary-color);
     color: #fff;
+}
+/* Feedback */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+.feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback-item .info .title {
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+    margin-top: 18px;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+.feedback-item .info .dots {
+    display: flex;
+    margin-top: 28px;
+}
+.feedback-item .dots .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+.feedback-item .info .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.feedback-item .content {
+    width: 66%;
+}
+.feedback-item .content blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
 }
