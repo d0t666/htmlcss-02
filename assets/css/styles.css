@@ -380,6 +380,10 @@ a {
     color: #fff;
 }
 /* Feedback */
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
 .feedback {
     margin-top: 135px;
     padding: 96px 0;
@@ -388,6 +392,8 @@ a {
 .feedback-item {
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
 }
 .feedback-item .avatar {
     width: 72px;
