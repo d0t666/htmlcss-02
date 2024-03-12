@@ -495,3 +495,17 @@ a {
     font-style: normal;
     font-weight: 600;
 }
+/* features 2 */
+.features-2 {
+    margin-top: 70px;
+}
+.features-2 .body {
+    flex-direction: row-reverse;
+}
+.features-2 .content {
+    width: 49%;
+}
+.features-2 .body .images img {
+    width: 470px;
+    height: 440px;
+}
