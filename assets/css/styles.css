@@ -216,6 +216,7 @@ a {
     display: flex;
     align-items: center;
     /* gap: 28px; */
+    flex-wrap: wrap;
 }
 .hero .cta-group .hero-cta {
     margin: 38px 0 48px;

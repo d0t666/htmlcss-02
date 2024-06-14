@@ -1,0 +1,166 @@
+/* // `xs` returns only a ruleset and no media query */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    .header .main-content {
+        max-width: calc(100% - 48px);
+    }
+    .header .action .signup-btn {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .header .action .signup-btn {
+        display: none;
+    }
+    .course-list {
+        flex-direction: column;
+    }
+    .blog-list .item .title a {
+        font-size: 1.2rem;
+    }
+    .blog-list .item .date {
+        font-size: 1rem;
+    }
+    .blog .blog-list .item .thumb {
+        height: 16%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blog-list .item {
+        height: 100%;
+    }
+    .blog-list .item .btn {
+        min-width: 61px;
+        height: initial;
+        font-size: 1rem;
+    }
+    .popular-top {
+        flex-direction: column;
+    }
+    /* .features .body .images {
+        display: none;
+    } */
+    .features .body .images img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .features .body .image-single img {
+        width: 100%;
+    }
+    .feedback-item .content blockquote {
+        font-size: 1.6rem;
+    }
+    .blog .blog-top .desc {
+        width: 100%;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+    .hero .media-block .img,
+    .hero-summary,
+    .hero .media-block {
+        display: none;
+    }
+    .hero .content-block {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .hero .cta-group {
+        gap: 10px;
+    }
+    .course-list {
+        gap: 10px;
+    }
+    .course-list .foot {
+        flex-direction: column;
+    }
+    .course-list .course-item .book-btn {
+        margin-top: 10px;
+    }
+    .nav a {
+        font-size: 1.2rem;
+    }
+    .features .body {
+        flex-direction: column;
+    }
+    .features .content {
+        width: calc(100% - 48px);
+    }
+    .blog {
+        padding: 10px;
+    }
+    .footer {
+        padding: 50px 10px 5px;
+    }
+    .hero .body {
+        display: block !important;
+    }
+    .main-content {
+        width: 100% !important;
+    }
+    .popular-top .desc {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero .watch-video {
+        margin: 0;
+        flex: 1;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+    .hero .media-block {
+        width: 43%;
+    }
+
+    .feedback .main-content .feedback-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feedback-item .content {
+        width: 100%;
+    }
+    .features .body .images {
+        gap: 0 10px;
+    }
+
+    .hero .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero .media-block .img {
+        max-width: 345px;
+    }
+    .hero .content-block {
+        padding: 0;
+        width: 100%;
+    }
+    .hero-summary {
+        right: -110px;
+    }
+    .header .action {
+        margin-left: 0;
+    }
+    .footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    .footer .row .column {
+        width: 100% !important;
+    }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media screen and (max-width: 1399.98px) {
+}
